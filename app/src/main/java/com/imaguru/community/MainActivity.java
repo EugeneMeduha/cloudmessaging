@@ -44,9 +44,12 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
+    private static final String SERVER_KEY = "AIzaSyDZrLsKJ6TOxVyM4QCjL-pSTov7GbWLvqk";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-                String serverKey = "key=AIzaSyDZrLsKJ6TOxVyM4QCjL-pSTov7GbWLvqk";
+                String serverKey = "key="+SERVER_KEY;
 
                 HashMap<String, Object> params = new HashMap<>();
                 String channel="dLzFWPWGf90:APA91bGk3RO-qz3w9h3hwWLGl9f49nAKSQVfoz2QmFxU2ieKX49Skvk_FfzaJC7L0KyLJxTFKdAR_0oxsX0O-pZbOWDO73qGNcEQCefUoChKPj_XlX5mUWIck3uWKEoZJxLNvt-9w690";
